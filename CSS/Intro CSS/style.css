@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+@font-face {
+    font-family: "Abel";
+    src: url(./assets/fonts/Abel-Regular.ttf);
+}
+
+/* l'étoile donne du style à TOUS les éléments */
+/* * {
+    margin: 0;
+    padding: O;
+} */
+
+body {
+    font-family: "Abel", Verdana;
+    background: url(./assets/img/bg.jpg) center/cover;
+    /* VH (Viewport Height) = 100% de la taille de l'écran */
+    min-height: 100vh;
+}
+
+h1 {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-align: center;
+    /* les tailles de police doivent être en REM */
+    font-size: 2.5rem;
+    text-shadow: 3px 3px 8px #00000042;
+    color: dodgerblue;
+    font-family: 'Poppins', sans-serif;
+}
+
+main {
+    min-height: 500px;
+    width: 90%;
+    background: rgba(255, 255, 255, 0.599);
+    /* Centrer une box  */
+    margin : 0 auto;
+    border: 2px solid rgb(0, 255, 251);
+    border-radius: 20px 20px 0 0 ;
+    box-shadow: 0 0 20px 4px #8fe4e1;
+    padding: 15px;
+}
+
+h2 {
+    margin: O;
+}
+
+.flexbox {
+    border: 2px solid rgb(81, 133, 215);
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+/* FLEXBOX */
+/* Sert à repartir équitablement des éléments sur la page  */
+.flexbox ul {
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.flexbox li {
+    list-style-type: none;
+    height: 160px;
+    width: 160px;
+    margin: 10px;
+    background: turquoise;
+    /* Centrer un unique élément verticalement et horizontalement */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ 
