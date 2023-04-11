@@ -9,6 +9,7 @@
 /* * {
     margin: 0;
     padding: O;
+    border: 2px solid red;
 } */
 
 body {
@@ -23,7 +24,10 @@ h1 {
     letter-spacing: 3px;
     text-align: center;
     /* les tailles de police doivent être en REM */
-    font-size: 2.5rem;
+    /* font-size: 2.5rem; */
+
+    /* Viewport Width */
+    font-size: 8vw;
     text-shadow: 3px 3px 8px #00000042;
     color: dodgerblue;
     font-family: 'Poppins', sans-serif;
@@ -45,11 +49,12 @@ h2 {
     margin: O;
 }
 
-.flexbox, .grid {
+.flexbox, .grid, .absolute {
     border: 2px solid rgb(81, 133, 215);
     border-radius: 10px;
     padding: 10px;
     margin-top: 20px;
+    min-height: 150px;
 }
 
 /* FLEXBOX */
@@ -79,7 +84,9 @@ h2 {
  }
  .grid img {
     width: 80%;
-    margin-top: 20px;
+    margin: 20px auto;
+    display: block;
+  
  }
 
  form {
@@ -118,3 +125,63 @@ input, textarea {
     background: darkblue;
     color: white;
  }
+
+/* ABSOLUTE */
+/* Sans éléments en Relative, de base, l'élément en absolute l'est par rapport au body */
+/* Il faut mettre une position relative au parent pour contraindre l'élément en absolute dans ses frontières */
+.absolute {
+    position: relative;
+}
+
+#circle1 {
+    height: 80px;
+    width: 80px;
+    background: skyblue;
+    position: absolute;
+    border-radius: 150px;
+    top: -20px;
+    right: -20px;
+}
+
+#circle2 {
+    height: 40px;
+    width: 40px;
+    border-radius: 150px;
+    background: teal;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 100px; 
+}
+
+/* RESPONSIVE */
+@media screen and (max-width: 900px) {
+    .grid-container{
+        display: block;
+    }
+    .grid-container img {
+        width: 30%;  
+    }
+}
+
+@media screen and (max-width: 610px) {
+   
+    .flexbox ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    form {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "i1"
+    "i2"
+    "ta"
+    "bt";
+   }
+   input,
+   textarea {
+    font-size: 0.8rem;
+   }
+}
