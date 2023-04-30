@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+
+@font-face {
+    font-family: "Inter";
+}
+ 
+
+
+body {
+    background-color: #1D1D1D;
+}
+
+h2 {
+    color: white
+}
