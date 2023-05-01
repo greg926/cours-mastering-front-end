@@ -9,20 +9,24 @@
 
 * {
     margin: 0;
-    padding: 0;
+    padding: 5px;
     box-sizing: border-box;
   }
 
 
 body {
-  background-color: #1d1d1d;
   font-family: 'Inter', sans-serif;
-  width: 100vw;
   min-height: 100vh;
+  background: rgb(29, 29, 29);
+  color: rgb(250, 250, 250);
 }
 
-.logo {
-    font-size: 2.2rem;
+li {
+    list-style: none;
+}
+
+p {
+    font-size: 0.8rem;
 }
 
 nav {
@@ -30,23 +34,17 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-
 }
 
-nav ul  {
+nav ul {
     display: flex;
     justify-content: space-between;
     width: 50%;
-    list-style: none;
-}
-
-nav ul li a {
-    text-decoration: none;
 }
 
 .header {
-    display: flex; 
-    justify-content: center;
+    display: flex;
+    justify-content: space-around;
     margin: 30px auto;
 }
 
@@ -57,4 +55,68 @@ nav ul li a {
     width: 50%;
 }
 
+h1 {
+    font-size: 5rem;
+}
+.header-left-container h3 {
+    color: #474DFF;
+    font-size: 1.8rem;
+}
 
+.header-right {
+    width: 50%;
+}
+
+#modem {
+    width: 100%;
+}
+
+.infos {
+    display: flex;
+    background: rgb(10, 10, 10);
+    border-radius: 10px;
+}
+
+infos-left {
+    width: 30%;
+}
+
+.btn-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+button {
+    border: none;
+    background: #474DFF;
+    color: white;
+    width: 150px;
+    padding: 10px 0;
+    border-radius: 10px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin: 5px;
+}
+
+.info-right {
+    width: 67%;
+}
+
+.investors {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80%;
+}
+
+.img-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.img-container img {
+    height: 60px;
+}
