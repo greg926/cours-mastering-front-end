@@ -77,7 +77,7 @@ h1 {
     border-radius: 10px;
 }
 
-infos-left {
+.infos-left {
     width: 30%;
 }
 
@@ -99,7 +99,7 @@ button {
     margin: 5px;
 }
 
-.info-right {
+.infos-right {
     width: 67%;
 }
 
