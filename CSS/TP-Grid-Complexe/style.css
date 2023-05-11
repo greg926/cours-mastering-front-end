@@ -6,28 +6,28 @@ body {
   grid-template-rows: repeat;
   gap: 10px;
   grid-template-areas: 
-   "yellow yellow purple"
-   "red green purple"
-   "red orchid orchid";
+   "ye ye pu"
+   "re gr pu"
+   "re orc orc";
 }
 
 div:nth-child(1) {
   background: yellow;
-  grid-area: yellow;
+  grid-area: ye;
 }
 div:nth-child(2) {
   background: purple;
-  grid-area: purple;
+  grid-area: pu;
 }
 div:nth-child(3) {
   background: green;
-  grid-area: green;
+  grid-area: gr;
 }
 div:nth-child(4) {
   background: red;
-  grid-area: red;
+  grid-area: re;
 }
 div:nth-child(5) {
   background: orchid;
-  grid-area: orchid;
+  grid-area: orc;
 }
