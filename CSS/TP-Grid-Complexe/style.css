@@ -1,19 +1,33 @@
 body {
   min-height: 100vh;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat;
+  gap: 10px;
+  grid-template-areas: 
+   "yellow yellow purple"
+   "red green purple"
+   "red orchid orchid";
 }
 
 div:nth-child(1) {
   background: yellow;
+  grid-area: yellow;
 }
 div:nth-child(2) {
   background: purple;
+  grid-area: purple;
 }
 div:nth-child(3) {
   background: green;
+  grid-area: green;
 }
 div:nth-child(4) {
   background: red;
+  grid-area: red;
 }
 div:nth-child(5) {
   background: orchid;
+  grid-area: orchid;
 }
